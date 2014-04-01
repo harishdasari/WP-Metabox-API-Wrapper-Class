@@ -1,6 +1,8 @@
 
 ##WordPress Metabox API Wrapper Class
 
+_**Note: This is not a WordPress Plugin. This is a PHP Library for creating custom metabox option for WordPress themes and plugins.**_
+
 Add Custom Metaboxes to your post, page and custom post types.
 You just need to define the options and input fields, and this wrapper class will do the rest such as registering metabox, generating input fields and saving post meta etc,. I used best security methods while saving post meta fields, such as nonces, user permission checks, validation and data sanitization.
 
@@ -17,6 +19,11 @@ You can add 10 different types of Input fields and Section.
 8. Upload
 9. Color
 10. Editor
+
+###Screenshot
+
+![WP Postbox API Screenshot](https://raw.github.com/harishdasari/WP-Postbox-API-Wrapper-Class/master/screenshot.png)
+
 
 ###Installation
 Copy the Directory `hd-wp-metabox-api` into your theme or plugin folder.
@@ -63,7 +70,7 @@ Define **input** field options and give unique `meta_key` as key.
 
 Now add the other input fields you want. but make sure the array key should be unique.
 
-####Initializing Metabox API Class
+####Initialize
 Initialize the metabox class using the defined options and fields.
 
 	$example_metabox = new HD_WP_Metabox_API( $example_options, $example_fields );
@@ -318,9 +325,14 @@ Full list of input field emamples and sections.
 
 Note: where `function_name` is a callback function
 
-Please post your suggetions and requests in issues, and also help me to imrpove this documenration.
+###License
+GNU General Public License v2.0 or later | [http://www.opensource.org/licenses/gpl-license.php](http://www.opensource.org/licenses/gpl-license.php)
 
+<hr/>
+
+Please post your suggetions and requests in issues, and also help me to imrpove this documenration.
 
 Thank You <br/>
 -- _Harish Dasari_ <br/>
 [@harishdasari](http://twitter.com/harishdasari)
+
